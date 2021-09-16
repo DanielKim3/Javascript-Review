@@ -1,8 +1,8 @@
-class person{
-    name; // 속성(field)
-    age; // 속성(field)
-    speak(); //행동 (method)
-}
+//class person{
+  //  name; // 속성(field)
+    //age; // 속성(field)
+    //speak(); //행동 (method)
+//}
 //class 안에는 fields와 methods가 들어 있다.
 //class 붕어빵을 만들수 있는 틀 같은 것. -> template, declare once, no data in
 
@@ -10,7 +10,7 @@ class person{
 
 //////////////////////////////////////////////////////////////
 
-'use strict';
+'use strict'
 // Object-oriendted programming
 // class: template
 // object: instance of a class 붕어붕어빵빵
@@ -18,29 +18,28 @@ class person{
 //  - introduced in ES6
 //  - syntactical sugar over prototype-based inheritance
 
-// 1. Class declarations
-class Person {
-  // constructor
-  constructor(name, age) {
-    // fields
+class person {
+  //constructor
+  constructor(name, age){
+    //fields
     this.name = name;
     this.age = age;
   }
 
-  // methods
-  speak() {
-    console.log(`${this.name}: hello!`);
+  //methods
+  speak(){
+    console.log(`${this.name}:hello!`);
   }
 }
 
-const ellie = new Person('ellie', 20);
-console.log(ellie.name);
-console.log(ellie.age);
-ellie.speak();
+const woojin = new person('woojin', 20);
+console.log(woojin.name);
+console.log(woojin.age);
+woojin.speak();
 
-// 2. Getter and setters
-class User {
-  constructor(firstName, lastName, age) {
+//2. Getter and setters
+class user {
+  constructor(firstName, lastName, age){
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -51,14 +50,14 @@ class User {
   }
 
   set age(value) {
-    // if (value < 0) {
-    //   throw Error('age can not be negative');
-    // }
-    this._age = value < 0 ? 0 : value;
+    //if (value < 0){
+      //throw Error(`age can't be negative);
+    //}
+    this._age = value < 0 ? 0 :value;
   }
 }
 
-const user1 = new User('Steve', 'Job', -1);
+const user1 = new user('steve', 'job', -1);
 console.log(user1.age);
 
 // 3. Fields (public, private)
@@ -144,3 +143,4 @@ function change(value) {
 }
 change(obj);
 console.log(obj);
+© 2021 GitHub, Inc.

@@ -140,7 +140,7 @@ const simpleMultiply = (a,b) => {
 function hello() {
     console.log('IIFE');
 }
-//-> 
+//-> () 괄호 를 넣고 쓰고 ();실행하면 된다.
 (function hello() {
     console.log('SLEEPY');
 })();
